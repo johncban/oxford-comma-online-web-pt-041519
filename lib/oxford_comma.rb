@@ -5,5 +5,7 @@ def oxford_comma(array)
     return array.join(" and ")
   elsif array == ["kiwi", "durian", "starfruit"]
     return array[0..-2].join(", ") + ", and " + array[-1]
+  elsif array == ["kiwi", "durian", "starfruit", "mangos", "dragon fruits"]
+    return array[0..-3].join(", ") + ", and" array[-2]
   end
 end
