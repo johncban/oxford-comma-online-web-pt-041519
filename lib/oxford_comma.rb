@@ -5,6 +5,7 @@ def oxford_comma(array)
     array[-2] << " and "
     array.join
   elsif array.length > 2
+    # Source: https://apidock.com/ruby/String/prepend
     array[-1].prepend "and "
     array.join(", ")
   end
